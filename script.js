@@ -15,8 +15,8 @@ console.log(fullAge);
 var name = 'John';
 var age = 26;
 
-console.log(name + age);
-console.log(age + age);
+// console.log(name + age);
+// console.log(age + age);
 
 var job, isMarried;
 
@@ -28,4 +28,10 @@ console.log(name + ' is a ' + age + ' ' + ' years old ' + job + '. Is he married
 age = 'Thirthy six';
 job = 'driver';
 
-console.log(name + ' is a ' + age + ' ' + ' years old ' + job + '. Is he married? ' + isMarried + '.');
+console.log(name + ' is a' + age + ' ' + 'years old ' + job + '. Is he married? ' + isMarried + '.');
+
+// var lastName = prompt('What is the last name?');
+// console.log(lastName);
+
+alert(name + ' is a' + age + ' ' + 'years old ' + job + '. Is he married? ' + isMarried + '.');
+
