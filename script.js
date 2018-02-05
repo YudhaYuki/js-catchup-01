@@ -66,38 +66,69 @@
 
 
 
-/////////////////////////////////// IF ELSE /////////////////////////////////////////
+// /////////////////////////////////// IF ELSE /////////////////////////////////////////
 
-var name = 'John';
-var age = 26;
-var isMarried = 'yes';
+// var name = 'John';
+// var age = 26;
+// var isMarried = 'yes';
 
-if (isMarried === 'yes') {
-    console.log(name + ' is married !');
-} else {
-    console.log(name + ' will hopefully marry soon !');
-}
+// if (isMarried === 'yes') {
+//     console.log(name + ' is married !');
+// } else {
+//     console.log(name + ' will hopefully marry soon !');
+// }
 
 
-isMarried = true;
+// isMarried = true;
+
+// // if(isMarried) {
+// //     console.log('YES!');
+// // } else {
+// //     console.log('NO!');
+// // }
 
 // if(isMarried) {
 //     console.log('YES!');
-// } else {
-//     console.log('NO!');
 // }
 
-if(isMarried) {
-    console.log('YES!');
+// // Js does Type coercion
+// if (23 == "23") {
+//     console.log('Something to print...');
+// }
+
+// // Js doesnt do Type coercion, it sees that the 23 is as number ans "23" as string
+// if (23 === "23") {
+//     console.log('Something to print...');
+// }
+
+//////////////////////////////// BOOLEAN LOGIC AND SWITCH /////////////////////////////////////////
+
+var age = 35;
+
+if (age < 20) {
+    console.log('John is a teenager');
+} else if (age > 20 && age < 30) {
+    console.log ('John is a young man')
+}
+else {
+    console.log('John is a man.');
 }
 
-// Js does Type coercion
-if (23 == "23") {
-    console.log('Something to print...');
-}
 
-// Js doesnt do Type coercion, it sees that the 23 is as number ans "23" as string
-if (23 === "23") {
-    console.log('Something to print...');
-}
+var job = 'teacher';
 
+job = prompt('What does John do?');
+
+switch (job) {
+    case 'teacher':
+        console.log('John teaches kids.');
+        break;
+    case 'driver':
+        console.log('John drives a cab');
+        break;
+    case 'cop':
+        console.log('John fights crimes.');
+        break;
+    default:
+        console.log('John does something else');
+}
