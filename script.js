@@ -257,6 +257,8 @@
 
 //////////////////////////////// OBJECTS //////////////////////////////////////
 
+
+// 1st way of creating an object
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -275,3 +277,15 @@ john.lastName = 'Miller';
 john['job'] = 'programmer';
 
 console.log(john);
+
+
+// 2nd way of creating an object
+
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1969;
+jane['job'] = 'retired';
+jane['ismarried'] = true;
+
+console.log(jane);
