@@ -223,34 +223,47 @@
 // // In short : an expression is meant to produce a value while statement is just meant to do some actions to perform something
 
 
-//////////////////////////////// ARRAY //////////////////////////////////////
+// //////////////////////////////// ARRAY //////////////////////////////////////
 
-var names = ['John', 'Jane', 'Mark'];
-var years = new Array(1990, 1969, 1948);
+// var names = ['John', 'Jane', 'Mark'];
+// var years = new Array(1990, 1969, 1948);
 
-console.log(names[2]);
-names[1] = 'Ben';
-console.log(names);
+// console.log(names[2]);
+// names[1] = 'Ben';
+// console.log(names);
 
-var john = ['John', 'Smith', 1990, 'driver', false];
+// var john = ['John', 'Smith', 1990, 'driver', false];
 
-// Function PUSH = Add element to the last array
-john.push('blue');
+// // Function PUSH = Add element to the last array
+// john.push('blue');
 
-// UNSHIFT = Add element to the first array
-john.unshift('Mr.');
+// // UNSHIFT = Add element to the first array
+// john.unshift('Mr.');
 
-// POP = Remove last alement in array
-john.pop();
+// // POP = Remove last alement in array
+// john.pop();
 
-// SHIFT = Remove first alement in array
-john.shift();
+// // SHIFT = Remove first alement in array
+// john.shift();
 
-console.log(john);
+// console.log(john);
 
-// Index of = One of the useful function of this function is to find if the element is or not in the array
-// alert(john.indexOf('Smith'));
+// // Index of = One of the useful function of this function is to find if the element is or not in the array
+// // alert(john.indexOf('Smith'));
 
-if (john.indexOf('teacher') === -1) {
-    console.log('John is NOT a teacher');
-}
+// if (john.indexOf('teacher') === -1) {
+//     console.log('John is NOT a teacher');
+// }
+
+//////////////////////////////// OBJECTS //////////////////////////////////////
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    yearofBirth: 1990,
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.lastName);
+console.log(john['lastName']);
