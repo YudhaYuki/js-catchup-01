@@ -173,28 +173,51 @@
 //////////////////////////////// FUNCTION //////////////////////////////////////
 
 
-function calculateAge(yearOfBirth) {
-    var age = 2016 - yearOfBirth;
-    return age;
+// function calculateAge(yearOfBirth) {
+//     var age = 2016 - yearOfBirth;
+//     return age;
+// }
+
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1969);
+// var ageMary = calculateAge(1948);
+// console.log(ageMary);
+
+
+// function yearsUntilRetirement(name, year) {
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
+
+//     if (retirement >= 0) {
+//     console.log(name + ' retires in ' + retirement + ' years');
+//     } else {
+//         console.log(name + ' is already retired');        
+//     }
+// }
+
+// yearsUntilRetirement('John', 1990);
+// yearsUntilRetirement('Mike', 1969);
+// yearsUntilRetirement('Mary', 1948);
+
+
+//////////////////////////////// STATEMENTS and EXPRESSIONS //////////////////////////////////////
+
+function someFunction(par) {
+    // Code
 }
 
-var ageJohn = calculateAge(1990);
-var ageMike = calculateAge(1969);
-var ageMary = calculateAge(1948);
-console.log(ageMary);
-
-
-function yearsUntilRetirement(name, year) {
-    var age = calculateAge(year);
-    var retirement = 65 - age;
-
-    if (retirement >= 0) {
-    console.log(name + ' retires in ' + retirement + ' years');
-    } else {
-        console.log(name + ' is already retired');        
-    }
+var someFunction(par) {
+    //ode
 }
 
-yearsUntilRetirement('John', 1990);
-yearsUntilRetirement('Mike', 1969);
-yearsUntilRetirement('Mary', 1948);
+// Expression = it produces something/output/outcome
+3 + 4;
+var x = 3;
+
+// Statements = Performs an action, but it doesn't produce an immediate value
+// there is nothing that it stores as result of this
+if (x === 5) {
+    // Do something
+}
+
+// In short : an expression is meant to produce a value while statement is just meant to do some actions to perform something
