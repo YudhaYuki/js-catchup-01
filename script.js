@@ -103,32 +103,67 @@
 
 //////////////////////////////// BOOLEAN LOGIC AND SWITCH /////////////////////////////////////////
 
-var age = 35;
+// var age = 35;
 
-if (age < 20) {
-    console.log('John is a teenager');
-} else if (age > 20 && age < 30) {
-    console.log ('John is a young man')
-}
-else {
-    console.log('John is a man.');
-}
+// if (age < 20) {
+//     console.log('John is a teenager');
+// } else if (age > 20 && age < 30) {
+//     console.log ('John is a young man')
+// }
+// else {
+//     console.log('John is a man.');
+// }
 
 
-var job = 'teacher';
+// var job = 'teacher';
 
-job = prompt('What does John do?');
+// job = prompt('What does John do?');
 
-switch (job) {
-    case 'teacher':
-        console.log('John teaches kids.');
-        break;
-    case 'driver':
-        console.log('John drives a cab');
-        break;
-    case 'cop':
-        console.log('John fights crimes.');
-        break;
-    default:
-        console.log('John does something else');
+// switch (job) {
+//     case 'teacher':
+//         console.log('John teaches kids.');
+//         break;
+//     case 'driver':
+//         console.log('John drives a cab');
+//         break;
+//     case 'cop':
+//         console.log('John fights crimes.');
+//         break;
+//     default:
+//         console.log('John does something else');
+// }
+
+var heightRene = 170;
+var heightTonny = 195;
+
+var ageRene = 36;
+var ageTonny = 29;
+
+var scoreRene = heightRene + 5 * ageRene;
+var scoreTonny = heightTonny + 5 * ageTonny;
+
+// if (scoreRene > scoreTonny) {
+//     console.log('Rene wins the game with ' + scoreRene + ' points!');
+// } else if (scoreTonny > scoreRene) {
+//     console.log ('Tonny wins the game with ' + scoreTonny + ' points!')
+// } 
+// // else if () {
+
+// // } 
+// else {
+//     console.log('There is a draw.');
+// }
+
+var heightMary = 158;
+var ageMary = 31;
+var scoreMary = heightMary + 5 * ageMary;
+
+if (scoreRene > scoreTonny && scoreRene > scoreMary) {
+    console.log('Rene wins the game with ' + scoreRene + ' points!');
+} else if (scoreTonny > scoreRene && scoreTonny > scoreMary) {
+    console.log('Tonny wins the game with ' + scoreTonny + ' points!');
+} else if (scoreMary > scoreRene && scoreMary > scoreTonny) {
+    console.log('Mary wins the game with ' + scoreMary + ' points!');
+} else {
+    console.log('It\'s draw.');
 }
