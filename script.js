@@ -255,37 +255,106 @@
 //     console.log('John is NOT a teacher');
 // }
 
-//////////////////////////////// OBJECTS //////////////////////////////////////
+// //////////////////////////////// OBJECTS //////////////////////////////////////
 
 
-// 1st way of creating an object
+// // 1st way of creating an object
+// var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     yearofBirth: 1990,
+//     job: 'teacher',
+//     isMarried: false
+// };
+
+// console.log(john.lastName);
+// console.log(john['lastName']);
+
+// var xyz = 'job';
+// console.log(john[xyz]);
+
+// john.lastName = 'Miller';
+// john['job'] = 'programmer';
+
+// console.log(john);
+
+
+// // 2nd way of creating an object
+
+// var jane = new Object();
+// jane.firstName = 'Jane';
+// jane.lastName = 'Smith';
+// jane['yearOfBirth'] = 1969;
+// jane['job'] = 'retired';
+// jane['ismarried'] = true;
+
+// console.log(jane);
+
+
+//////////////////////////////// OBJECTS and METHODS //////////////////////////////////////
+
+
+// Version 01
+/*
 var john = {
     firstName: 'John',
     lastName: 'Smith',
-    yearofBirth: 1990,
+    yearOfBirth: 1990,
     job: 'teacher',
-    isMarried: false
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    // Functions expression
+    // calculateAge: function(yearOfBirth) {
+    //     return 2016 - yearOfBirth;
+    // }
+
+    calculateAge: function() {
+        return 2016 - this.yearOfBirth;
+    } 
 };
 
-console.log(john.lastName);
-console.log(john['lastName']);
 
-var xyz = 'job';
-console.log(john[xyz]);
+// console.log(john.family[2]);
+// console.log(john.calculateAge(1970));
+console.log(john.calculateAge());
 
-john.lastName = 'Miller';
-john['job'] = 'programmer';
+// storing the value into the varibale
+
+var age = john.calculateAge();
+john.age = age;
 
 console.log(john);
 
+*/
 
-// 2nd way of creating an object
+// Version 02
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        // return 2016 - this.yearOfBirth;
+        this.age = 2016 - this.yearOfBirth;
+    } 
+};
 
-var jane = new Object();
-jane.firstName = 'Jane';
-jane.lastName = 'Smith';
-jane['yearOfBirth'] = 1969;
-jane['job'] = 'retired';
-jane['ismarried'] = true;
+john.calculateAge();
+console.log(john);
 
-console.log(jane);
+
+
+
+
+var mike = {
+    yearOfBirth: 1950,
+    calculateAge: function() {
+        // return 2016 - this.yearOfBirth;
+        this.age = 2016 - this.yearOfBirth;
+    } 
+};
+
+mike.calculateAge();
+console.log(mike);
