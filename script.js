@@ -200,24 +200,39 @@
 // yearsUntilRetirement('Mary', 1948);
 
 
-//////////////////////////////// STATEMENTS and EXPRESSIONS //////////////////////////////////////
+// //////////////////////////////// STATEMENTS and EXPRESSIONS //////////////////////////////////////
 
-function someFunction(par) {
-    // Code
-}
+// function someFunction(par) {
+//     // Code
+// }
 
-var someFunction(par) {
-    //ode
-}
+// var someFunction(par) {
+//     //ode
+// }
 
-// Expression = it produces something/output/outcome
-3 + 4;
-var x = 3;
+// // Expression = it produces something/output/outcome
+// 3 + 4;
+// var x = 3;
 
-// Statements = Performs an action, but it doesn't produce an immediate value
-// there is nothing that it stores as result of this
-if (x === 5) {
-    // Do something
-}
+// // Statements = Performs an action, but it doesn't produce an immediate value
+// // there is nothing that it stores as result of this
+// if (x === 5) {
+//     // Do something
+// }
 
-// In short : an expression is meant to produce a value while statement is just meant to do some actions to perform something
+// // In short : an expression is meant to produce a value while statement is just meant to do some actions to perform something
+
+
+//////////////////////////////// ARRAY //////////////////////////////////////
+
+var names = ['John', 'Jane', 'Mark'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[2]);
+names[1] = 'Ben';
+console.log(names);
+
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue');
+console.log(john);
