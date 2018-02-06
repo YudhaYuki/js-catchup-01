@@ -369,13 +369,21 @@ console.log(mike);
 
 ///////////////////////////////////////////////// LOOP //////////////////////////////////
 
+// A loop example
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
 
+
 var names = ['Rika', 'Zulfiqar', 'Maesaroh', 'Yudha', 'Erna', 'Siman', 'Simon'];
 
+// Print from first to last
 for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+// print from last to first
+for (var i = names.length - 1; i >= 0; i--) {
     console.log(names[i]);
 }
 
