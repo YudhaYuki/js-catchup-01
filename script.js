@@ -232,7 +232,25 @@ console.log(names[2]);
 names[1] = 'Ben';
 console.log(names);
 
-var john = ['John', 'Smith', 1990, 'teacher', false];
+var john = ['John', 'Smith', 1990, 'driver', false];
 
+// Function PUSH = Add element to the last array
 john.push('blue');
+
+// UNSHIFT = Add element to the first array
+john.unshift('Mr.');
+
+// POP = Remove last alement in array
+john.pop();
+
+// SHIFT = Remove first alement in array
+john.shift();
+
 console.log(john);
+
+// Index of = One of the useful function of this function is to find if the element is or not in the array
+// alert(john.indexOf('Smith'));
+
+if (john.indexOf('teacher') === -1) {
+    console.log('John is NOT a teacher');
+}
