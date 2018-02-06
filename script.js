@@ -267,3 +267,11 @@ var john = {
 
 console.log(john.lastName);
 console.log(john['lastName']);
+
+var xyz = 'job';
+console.log(john[xyz]);
+
+john.lastName = 'Miller';
+john['job'] = 'programmer';
+
+console.log(john);
