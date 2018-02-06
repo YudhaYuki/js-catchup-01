@@ -369,7 +369,8 @@ console.log(mike);
 
 ///////////////////////////////////////////////// LOOP //////////////////////////////////
 
-// A loop example
+// A loop example with FOR
+/*
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
@@ -387,3 +388,15 @@ for (var i = names.length - 1; i >= 0; i--) {
     console.log(names[i]);
 }
 
+*/
+
+
+// While loops
+
+var names = ['Rika', 'Zulfiqar', 'Maesaroh', 'Yudha', 'Erna', 'Siman', 'Simon'];
+
+var i = 0;
+while(i < names.length) {
+    console.log(names[i]);
+    i++;
+}
