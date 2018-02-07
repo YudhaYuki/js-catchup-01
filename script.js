@@ -390,7 +390,7 @@ for (var i = names.length - 1; i >= 0; i--) {
 
 */
 
-
+/*
 // While loops
 
 var names = ['Rika', 'Zulfiqar', 'Maesaroh', 'Yudha', 'Erna', 'Siman', 'Simon'];
@@ -417,3 +417,54 @@ for (var i = 1; i <= 5; i++) {
     }
     console.log(i);
 }
+*/
+
+
+
+//////////////////////////// CHALLANGE /////////////////////
+
+// var bornYear = [1982, 1984, 1986, 1991, 1995, 2006];
+/*
+var ages = [];
+
+for (var i = 0; i < bornYear.length; i++) {
+    ages[i] = 2018 - bornYear[i];
+    // console.log(ages[i]);
+}
+
+for (i = 0; i < ages.length; i++) {
+    if (ages[i] >= 18) {
+        console.log('Person ' + (i + 1) + ' is '+ ages[i] + ' years old, and is of full age.');
+    } else {
+        console.log('Person ' + (i + 1) + ' is '+ ages[i] + ' years old, and is NOT of full age.');
+    }
+}
+*/
+
+
+// Question no 5
+function printFullAge(bornYear) {
+    var ages = [];
+    var fullAges = [];
+    
+    for (var i = 0; i < bornYear.length; i++) {
+        ages[i] = 2018 - bornYear[i];
+        // console.log(ages[i]);
+    }
+    
+    for (i = 0; i < ages.length; i++) {
+        if (ages[i] >= 18) {
+            console.log('Person ' + (i + 1) + ' is '+ ages[i] + ' years old, and is of full age.');
+            fullAges.push(true);
+        } else {
+            console.log('Person ' + (i + 1) + ' is '+ ages[i] + ' years old, and is NOT of full age.');
+            fullAges.push(false);
+        }
+    }
+
+    return fullAges;
+}
+
+var bornYear = [1982, 1984, 1986, 1991, 1995, 2006];
+var full_1 = printFullAge(bornYear);
+var full_2 = printFullAge([2012, 1915, 1999]);
