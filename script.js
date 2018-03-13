@@ -176,7 +176,7 @@ if ((johnScore > mikeScore) && (johnScore > marryScore)) {
 
 
 
-///////////////////// FUNCTION ///////////////////////
+///////////////////// ----------- FUNCTION ------------ ///////////////////////
 
 function calculateAge(yearOfBirth) {
     var age = 2016 - yearOfBirth;
@@ -187,4 +187,21 @@ var ageJohn = calculateAge(1990);
 var ageMike = calculateAge(1969);
 var ageMarry = calculateAge(1948);
 
-console.log(ageMarry);
+// console.log(ageMarry);
+
+
+
+function yearsUntilRetirement(name, year) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement >= 0) {
+        console.log(name + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(name + ' has already retired.');
+    }
+}
+
+yearsUntilRetirement('John', 1990);
+yearsUntilRetirement('Mike', 1969);
+yearsUntilRetirement('Marry', 1948);
