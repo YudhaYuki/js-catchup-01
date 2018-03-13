@@ -390,3 +390,19 @@ while(i < names.length) {
     console.log(names[i]);
     i++;
 }
+
+for (var i = 1; i <= 5; i++) {
+    console.log(i);
+
+    if (i === 3) {
+        break;
+    }
+}
+
+for (var i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+
+    console.log(i);    
+}
