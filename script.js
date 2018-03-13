@@ -138,6 +138,7 @@ switch (job) {
 }
 */
 
+/*
 var johnHeight = 180;
 var mikeHeight = 165;
 
@@ -147,7 +148,7 @@ var mikeAge = 29;
 var johnScore = johnHeight + 5 * johnAge;
 var mikeScore = mikeHeight + 5 * mikeAge;
 
-/*
+------------------------------------------
 if (johnScore > mikeScore) {
     console.log('Friend One is the winner with ' + mikeScore + ' points');
 } else if (mikeScore > johnScore) {
@@ -155,7 +156,7 @@ if (johnScore > mikeScore) {
 } else {
     console.log('There is a draw');
 }
-*/
+-------------------------------------------
 
 var marryHeight = 158;
 var marryAge = 31;
@@ -171,6 +172,19 @@ if ((johnScore > mikeScore) && (johnScore > marryScore)) {
 } else {
     console.log('It\'s a draw.');
 }
+*/
 
 
 
+///////////////////// FUNCTION ///////////////////////
+
+function calculateAge(yearOfBirth) {
+    var age = 2016 - yearOfBirth;
+    return age;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1969);
+var ageMarry = calculateAge(1948);
+
+console.log(ageMarry);
