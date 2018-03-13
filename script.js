@@ -267,7 +267,7 @@ if (john.indexOf('teacher') === -1) {
 
 
 ///////////////////--------- OBJECT -----------/////////////////////
-
+/*
 // 1st way fo creating an object
 var john = {
     name: 'John',
@@ -300,3 +300,26 @@ jane['job'] = 'retired';
 jane['isMarried'] = true;
 
 console.log(jane);
+*/
+
+
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        return 2016 - this.yearOfBirth;
+    }
+};
+
+// console.log(john.family[2]);
+
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);
