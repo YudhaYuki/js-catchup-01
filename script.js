@@ -74,6 +74,7 @@ console.log(ageMark);
 
 */
 
+/*
 var name = 'John';
 var age = 26;
 var isMarried = 'no';
@@ -87,17 +88,50 @@ if (isMarried === 'yes') {
 isMarried = true;
 
 /*
+--------------------------------
 if(isMarried) {
     console.log('YES!');
 } else {
     console.log('NO!');
 }
+--------------------------------
 */
 
+/*
 if(isMarried) {
     console.log('YES!');
 }
 
 if (23 === '23') {
     console.log('Print something...');
+}
+*/
+
+var age = 20;
+
+if (age < 20) {
+    console.log('John is a teenager');
+} else if (age >= 20 && age <= 30) {
+    console.log('John is a young man.')
+} else {
+    console.log ('John is a man');
+}
+
+
+var job = 'teacher';
+
+job = prompt('What foes John do?');
+
+switch (job) {
+    case 'teacher':
+        console.log('John teaches kids');
+        break;
+    case 'driver':
+        console.log('John drives a cab');
+        break;
+    case 'cop':
+        console.log('John helps fight crime');
+        break;
+    default:
+        console.log('John is jobless');
 }
