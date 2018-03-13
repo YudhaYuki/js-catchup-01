@@ -107,6 +107,7 @@ if (23 === '23') {
 }
 */
 
+/*
 var age = 20;
 
 if (age < 20) {
@@ -135,3 +136,41 @@ switch (job) {
     default:
         console.log('John is jobless');
 }
+*/
+
+var johnHeight = 180;
+var mikeHeight = 165;
+
+var johnAge = 26;
+var mikeAge = 29;
+
+var johnScore = johnHeight + 5 * johnAge;
+var mikeScore = mikeHeight + 5 * mikeAge;
+
+/*
+if (johnScore > mikeScore) {
+    console.log('Friend One is the winner with ' + mikeScore + ' points');
+} else if (mikeScore > johnScore) {
+    console.log('Friend Two is the winner with ' + mikeScore + ' points');    
+} else {
+    console.log('There is a draw');
+}
+*/
+
+var marryHeight = 158;
+var marryAge = 31;
+var marryScore = marryHeight + 5 * marryAge;
+
+
+if ((johnScore > mikeScore) && (johnScore > marryScore)) {
+    console.log('John is the winner with ' + johnScore + ' points');
+} else if ((mikeScore > johnScore) && (mikeScore > marryScore)) {
+    console.log('Mike is the winner with ' + mikeScore + ' points');
+} else if ((marryScore > johnScore) && (marryScore > mikeScore)) {
+    console.log('Marry is the winner with ' + marryScore + ' points');
+} else {
+    console.log('It\'s a draw.');
+}
+
+
+
