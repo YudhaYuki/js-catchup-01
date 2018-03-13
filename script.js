@@ -326,7 +326,7 @@ john.age = age;
 console.log(john);
 */
 
-
+/*
 // Version II
 var john = {
     name: 'John',
@@ -355,4 +355,25 @@ var mike = {
 
 mike.calculateAge();
 console.log(mike);
+*/
 
+
+
+
+
+
+///////////////////--------- LOOP -----------/////////////////////
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// FOR LOOP
+var names = ['Rika', 'Zul', 'Mae', 'Yudha', 'Erna', 'Siman', 'Simon'];
+
+for (var i = 0; i < names.length; i++ ) {
+    console.log(names[i]);
+}
+
+for (var i = names.length -1; i >= 0; i--) {
+    console.log(names[i]);
+}
