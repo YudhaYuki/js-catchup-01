@@ -370,9 +370,10 @@ for (var i = 0; i < 10; i++) {
 */
 
 
+/*
 var names = ['Rika', 'Zul', 'Mae', 'Yudha', 'Erna', 'Siman', 'Simon'];
 
-/*
+
 // FOR LOOP
 for (var i = 0; i < names.length; i++ ) {
     console.log(names[i]);
@@ -381,7 +382,7 @@ for (var i = 0; i < names.length; i++ ) {
 for (var i = names.length -1; i >= 0; i--) {
     console.log(names[i]);
 }
-*/
+
 
 
 // WHILE LOOP
@@ -406,3 +407,74 @@ for (var i = 1; i <= 5; i++) {
 
     console.log(i);    
 }
+
+*/
+
+
+
+
+////////////// ------------ CHALLANGE 2 --------- ///////////
+
+/*
+// 1
+var years = [2001, 1985, 1994, 2014, 1973];
+
+// 2
+var ages = [];
+
+// 3. Use Loop to fill the array with the ages of the persons
+for (var i = 0; i < years.length; i++) {
+    ages[i] = 2016 - years[i];
+}
+
+// 4. Use another loop to log into the console whether each person is of full age (18 or older)
+// as well as their age
+for (i = 0; i < ages.length; i++) {
+    if (ages[i] >= 18) {
+        console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is of full age');
+    } else {
+        console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is NOT of full age');        
+    }
+}
+*/
+
+
+// 5 Create a function called printFullAge which receives the vector of years
+// As an argument, executes the step 2, 3, and 4.
+// and return vector of true/false boolean values
+// true if the person is full age (>=18) and false if not (<18)
+
+var years = [2001, 1985, 1994, 2014, 1973];
+
+function printFullAge(years) {
+
+    // 2
+    var ages = [];
+    var fullAges = [];
+
+    // 3. Use Loop to fill the array with the ages of the persons
+    for (var i = 0; i < years.length; i++) {
+        ages[i] = 2016 - years[i];
+    }
+
+    // 4. Use another loop to log into the console 
+    // whether each person is of full age (18 or older)
+    // as well as their age
+    for (i = 0; i < ages.length; i++) {
+        if (ages[i] >= 18) {
+            console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is of full age');
+            fullAges.push(true);
+        } else {
+            console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is NOT of full age');    
+            fullAges.push(false);    
+        }
+    }
+
+    return fullAges;
+}
+
+// 6 Call the function with two different vectors
+// and store the results in two variables: full_1 and full_2
+
+var full_1 = printFullAge(years);
+var full_2 = printFullAge([2012, 1915, 1999]);
